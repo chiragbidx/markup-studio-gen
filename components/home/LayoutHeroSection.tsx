@@ -11,30 +11,29 @@ export const LayoutHeroSection = () => {
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
             <span className="mr-2 text-primary">
-              <Badge>Launch</Badge>
+              <Badge>New</Badge>
             </span>
-            <span>Panda SaaS starter is ready</span>
+            <span>Mailvibe is live — The next-gen email marketing SaaS</span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Build your next
-              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                SaaS
+              Reimagine email
+              <span className="text-transparent px-2 bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text">
+                marketing
               </span>
-              app in days, not weeks
+              for growth teams
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            Panda gives you authentication, billing-ready patterns, team flows,
-            and polished UI foundations so you can ship faster with confidence.
+            Mailvibe makes campaign management, automation, and analytics effortless—everything SaaS founders need, from simple newsletters to advanced nurturing.
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button asChild className="w-5/6 md:w-1/4 font-bold group/arrow">
               <Link href="#pricing">
-                Start Building
+                Start free
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </Link>
             </Button>
@@ -45,27 +44,27 @@ export const LayoutHeroSection = () => {
               className="w-5/6 md:w-1/4 font-bold"
             >
               <Link href="#features">
-                Explore features
+                View features
               </Link>
             </Button>
           </div>
         </div>
 
         <div className="relative group mt-14">
-          <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
+          <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-blue-400/30 rounded-full blur-3xl"></div>
           <Image
             width={1200}
             height={1200}
-            className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary border-t-primary/30 dark:hidden"
+            className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary border-t-blue-500/40 dark:hidden"
             src="/hero-image-light.jpeg"
-            alt="Panda dashboard preview"
+            alt="Mailvibe dashboard preview"
           />
           <Image
             width={1200}
             height={1200}
-            className="hidden w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none border border-t-2 border-secondary border-t-primary/30 dark:block"
+            className="hidden w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none border border-t-2 border-secondary border-t-blue-500/40 dark:block"
             src="/hero-image-dark.jpeg"
-            alt="Panda dashboard preview"
+            alt="Mailvibe dashboard preview"
           />
 
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
