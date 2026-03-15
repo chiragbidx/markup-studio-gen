@@ -51,7 +51,12 @@ export default async function CreateCampaignPage() {
       content: formData.get("content"),
     });
     if (!parsed.success) {
-      return { error: parsed.error.issues[0]?.message ?? "Invalid input." };
+      // On error, redirect to this page with status and message as query params
+      redirect(
+        `/dashboard/campaigns/create?status=error&message=${encodeURIComponent(
+          parsed.error.issues[0]?.message ?? "Invalid input."
+        )}`
+      );
     }
     await db.insert(campaigns).values({
       name: parsed.data.name,
