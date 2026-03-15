@@ -7,8 +7,9 @@ import ErrorReporter from "../components/ErrorReporter";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Panda - SaaS App Builder Starter",
-  description: "Production-ready SaaS app builder starter template with modern UI, dark mode, and launch-ready sections.",
+  title: "Mailvibe — Email Marketing SaaS",
+  description:
+    "Mailvibe is a production-ready, modern SaaS platform for email marketing. Launch, manage, and grow campaigns with simplicity and speed.",
 };
 
 export default function RootLayout({
