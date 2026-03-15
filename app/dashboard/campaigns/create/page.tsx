@@ -32,6 +32,19 @@ export default async function CreateCampaignPage() {
 
   async function createCampaign(formData: FormData) {
     "use server";
+    const session = await getAuthSession();
+    if (!session) redirect("/auth#signin");
+
+    const [membership] = await db
+      .select({ teamId: teamMembers.teamId })
+      .from(teamMembers)
+      .where(eq(teamMembers.userId, session.userId))
+      .limit(1);
+
+    if (!membership) {
+      redirect("/dashboard/campaigns");
+    }
+
     const parsed = campaignSchema.safeParse({
       name: formData.get("name"),
       subject: formData.get("subject"),
