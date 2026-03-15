@@ -33,12 +33,11 @@ interface FeatureProps {
   description: string;
 }
 
-// Landing page logo config.
-// Update these values to customize the navbar logo name and icon styling.
+// Brand logo config
 const LANDING_LOGO = {
-  name: "Panda",
+  name: "Mailvibe",
   iconClassName:
-    "bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white",
+    "bg-gradient-to-tr border-secondary from-blue-500 via-cyan-400 to-blue-600 rounded-lg w-9 h-9 mr-2 border text-white",
 };
 
 const routeList: RouteProps[] = [
@@ -62,16 +61,16 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Auth, Billing, Teams",
-    description: "Production-ready flows for sign-in, subscriptions, and organizations.",
+    title: "Campaign Automation",
+    description: "Automate, manage, and schedule email marketing with powerful workflows.",
   },
   {
-    title: "UI + Design System",
-    description: "Shadcn-based components with consistent theming and dark mode support.",
+    title: "Smart Analytics",
+    description: "Track open rates, clicks, and optimize your content for results.",
   },
   {
-    title: "Deploy Fast",
-    description: "Sane defaults for Next.js, TypeScript, and Vercel-first deployment.",
+    title: "Team Collaboration",
+    description: "Invite colleagues, manage permissions, and collaborate in real time.",
   },
 ];
 
@@ -160,7 +159,7 @@ export const Navbar = () => {
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                 <Image
                   src="/demo-img.jpg"
-                  alt="Panda preview"
+                  alt="Mailvibe preview"
                   className="h-full w-full rounded-md object-cover"
                   width={600}
                   height={600}
@@ -207,7 +206,7 @@ export const Navbar = () => {
 
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
-            aria-label="View on GitHub"
+            aria-label="View on Documentation"
             href="https://nextjs.org/docs"
             target="_blank"
           >
@@ -217,4 +216,4 @@ export const Navbar = () => {
       </div>
     </header>
   );
-};
+}
